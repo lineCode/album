@@ -39,7 +39,9 @@ Eclipse请下载源码自行转换成Library project。
 <activity
     android:name="com.yanzhenjie.album.AlbumActivity"
     android:label="图库"
-    android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+    android:configChanges="orientation|keyboardHidden|screenSize"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    android:windowSoftInputMode="stateAlwaysHidden|stateHidden" />
 ```
 其中`android:label="xx"`中的xx是调起的`Activity`的标题，你可以自定义，其它请照抄即可。
 
